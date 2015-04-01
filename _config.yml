@@ -1,10 +1,11 @@
 url: http://hxiao.de
-baseurl: /pinghengbao/
+baseurl: /pinghengbao
+
 
 # Site settings
 title: 平衡宝
 email: artex.xh@gmail.com
-description: "为您提供省心的股票自动优化方案"
+description: "为您提供安全省心的股票自动优化方案"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:

@@ -1,5 +1,5 @@
  <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/jquery-2.0.3.min.js" | prepend: site.baseurl }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
@@ -15,3 +15,37 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/jquery.easypiechart.min.js" | prepend: site.baseurl }}"></script>
+	
+	<script>
+	$(function() {
+		$('.chart').easyPieChart({
+			easing: 'easeOutBounce',
+			lineWidth: 10,
+			barColor: '#ebba17',
+			scaleColor: '#b8baba',
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+			}
+		});
+		var chart = window.chart = $('.chart');
+		
+		window.setInterval(function() {
+			var myArray = [];
+			var arrayMax = 4;
+			var sumArray = 0;
+			for (var i = 0; i < arrayMax; i++) {
+			  myArray.push(Math.random());
+			  sumArray += myArray[i];
+			}
+			for (var i = 0; i < arrayMax; i++) {
+			  myArray[i] /= sumArray;
+			  myArray[i] *= 100;
+			}
+			
+			chart.each(function(idx) {
+				$( this ).data('easyPieChart').update(myArray[idx]);	
+			});
+		}, 5000);
+	});
+	</script>
