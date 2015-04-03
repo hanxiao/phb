@@ -888,6 +888,24 @@ body {
   font-size: .8em;
 }
 
+.btn-phb {
+    background-color:#f8c52c;
+    color:#fff;
+}
+.btn-hold {
+    background-color:#F58723;
+    color:#fff;
+}
+.btn-spy {
+    background-color:#000000;
+    color:#fff;
+}
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 .faqHeader {
         font-size: 27px;

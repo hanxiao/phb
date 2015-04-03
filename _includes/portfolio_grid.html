@@ -1,29 +1,42 @@
 <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">示例</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-            {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-            </div>
-        </div>
-    </section>
+<section id="portfolio" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">实例</h2>
+				<h3 class="section-subheading text-muted">平衡宝在2014至2015年的市场表现</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+			<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+
+				<p class="text-muted">使用平衡宝对美股的9个板块基金(ETF)进行自动交易。账户初始金额为1万美元。在2014年1月1日至15年1月1日的回报率为18.13%。<br>对比之下，直接购买标准普尔指数基金(SPY)的一年的回报率为13.3%。夏普指数为1.36。</p>
+				<p><span class="label btn-phb">平衡宝回报率</span>  <span class="label btn-spy">标准普尔500基金回报率</span></p>
+				<canvas id="myChart1" width="600" height="300" auto-legend></canvas>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+			<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+				<p class="text-muted">使用平衡宝对苹果(AAPL)和微软(MSFT)两只股票进行自动交易。账户初始金额为1万美元。在2014年1月1日至15年1月1日的回报率为51.64%。<br>对比之下，持有策略（即2014在1月1日年按照AAPL和MSFT各买入价值5000美元的股票）随后持有的回报率为32.3%。<br>而购买标准普尔指数基金(SPY)的一年的回报率为13.3%。夏普指数为2.98。</p>
+				<p><span class="label btn-phb">平衡宝回报率</span>   <span class="label btn-hold">持有回报率</span>   <span class="label btn-spy">标准普尔500基金回报率</span></p>
+				<canvas id="myChart2" width="600" height="300"></canvas>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+							<div class="quote"><i class="fa fa-exclamation fa-4x"></i></div>
+			<h3 class="section-subheading text-muted">
+			历史数据上的表现仅作为算法性能的评测指标。<br>平衡宝保证上图数据的真实性，但并不保证未来一年的收益率吻合上图。
+			</h3>
+		</div>
+		</div>
+	</div>
+</section>
