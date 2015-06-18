@@ -1,33 +1,105 @@
 <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">团队</h2>
-                    <h3 class="section-subheading text-muted">小团队，大作为</h3>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                            {% endfor %}
-
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="team" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">团队</h2>
+				<h3 class="section-subheading text-muted">小团队，大作为</h3>
+			</div>
+		</div>
+	</div>
+	<div class="[ container text-center ]">
+		<div class="[ row ]">
+			<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+	            <div class="[ col-xs-4 col-sm-12 ]">
+	                <!-- Nav tabs -->
+	                <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+	                    <li role="presentation" class="active">
+	                        <a href="#hxiao" aria-controls="hxiao" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/1.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="">
+	                        <a href="#tqiu" aria-controls="tqiu" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/2.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="">
+	                        <a href="#xcliu" aria-controls="xcliu" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/3.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="">
+	                        <a href="#hcxiong" aria-controls="hcxiong" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/4.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <div class="[ col-xs-8 col-sm-12 ]">
+	                <!-- Tab panes -->
+	                <div class="tab-content" id="tabs-collapse">            
+	                    <div role="tabpanel" class="tab-pane fade in active" id="hxiao">
+	                        <div class="tab-inner">
+								<p class="lead">
+								肖涵
+								</p>
+								创始人     
+								<hr>              
+	                            <p>德国慕尼黑工业大学计算机系博士，机器学习和数据挖掘爱好者。</p>
+								<a href="http://de.linkedin.com/in/hxiao87">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div>
+	                    </div>
+                    
+	                    <div role="tabpanel" class="tab-pane fade" id="tqiu">
+	                        <div class="tab-inner">
+								<p class="lead">邱腾</p>
+								<hr> 
+	                            <p >毕业于德国柏林工业大学，因CIH病毒“被逼”成为计算机Geeker近20年，因留学欧洲关注并从事外汇及证券交易10余年，现任职大数据架构师，精通金融及市场数据分析，在MOOC平台小像学院主讲《Hadoop/Spark企业应用实战》课程。</p>
+								<a href="http://de.linkedin.com/in/tengqiu">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div>
+	                    </div>
+                    	
+	                    <div role="tabpanel" class="tab-pane fade" id="xcliu">
+	                        <div class="tab-inner">
+								<p class="lead">刘昕畅</p>
+								<hr>
+	                            <p>瑞士洛桑联邦理工学院在读博士，爱数学，爱编程，爱新奇想法。</p>
+								<a href="http://ch.linkedin.com/pub/xinchang-liu/24/59/447">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div> 
+							
+	                    </div>
+	                    <div role="tabpanel" class="tab-pane fade" id="hcxiong">
+	                        <div class="tab-inner">
+								<p class="lead">熊汉琛</p>
+								<hr>
+	                            <p>奥地利因斯布鲁克大学计算机博士，专注机器学习，数学建模和最优化。</p>
+								<a href="https://de.linkedin.com/pub/hanchen-xiong/1b/ba/722">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div> 
+	                    </div>
+	                </div>
+	            </div>        
+	        </div>
+		</div>
+	</div>
+</section>

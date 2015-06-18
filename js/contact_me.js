@@ -43,7 +43,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>您的信息已经发送，我们会尽快与您联系！</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 

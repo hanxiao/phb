@@ -1,10 +1,10 @@
-url: http://hxiao.de
-baseurl: /pinghengbao
+url: http://ojins.com
+baseurl: /phb
 
 
 # Site settings
 title: 平衡宝
-email: artex.xh@gmail.com
+email: contact@ojins.com
 description: "为您提供安全省心的股票自动优化方案"
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -17,17 +17,17 @@ color:
 people:
 - name: Han Xiao
   pic: 1
-  position: Lead Designer
+  position: Designer
   social:
     - title: linkedin
       url: #
 
-- name: Xinchang Liu
+- name: Teng Qiu
   pic: 2
   position: Lead Marketer
   social:
     - title: linkedin
-      url: #
+      url: #  
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
