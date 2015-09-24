@@ -1,9 +1,8 @@
 cd ~/Documents/pinghengbao/;
 bash write_faq.sh;
-bash write_status.sh; 
 jekyll b; 
-cp -R _site/* ../phb/; 
-cd ../phb/; 
+cp -R _site/* ../phb-github/phb/; 
+cd ../phb-github/phb/; 
 git add .; 
 git commit -m "add1"; 
-git push -u origin gitcafe-pages;
+git push -u origin gh-pages;

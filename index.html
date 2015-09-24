@@ -1,20 +1,761 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>平衡宝</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="为您提供安全省心的股票自动优化方案">
+    <link rel="canonical" href="http://ojins.com/phb/">
 
-  <h1>Posts</h1>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/phb/style.css">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/phb/css/font-awesome/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-</div>
+
+
+    <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">关闭导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">平衡宝</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#intro">介绍</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">特色</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">实例</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">如何开通？</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">团队</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">常见问题</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">安全省心的股票分配算法</div>
+                <div class="intro-heading">平衡宝</div>
+                <a href="#intro" class="page-scroll btn btn-xl">我有兴趣！</a>
+            </div>
+        </div>
+    </header>
+<!--
+        
+          
+        
+          
+        
+ -->
+
+
+	<!-- Intro Section -->
+<section id="intro" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">什么是平衡宝？</h2>
+				<h3 class="section-subheading text-muted">平衡宝是一套为您私人定制的股票自动优化算法</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-centered text-center">
+				当您选择一组股票后，平衡宝根据明日的股票价格预测，对您当前持有的股票配额进行优化。
+				<strong>对于预计下跌的股票，平衡宝将减少持有量；对于预计上涨的股票，则将增加持有量。</strong>
+				从而达到最大化明日的期望收益的目标，为您节省了手工交易所耗费的时间和精力。
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-3 col-xs-6">
+				<span class="chart" data-percent="25">
+					<span class="percent"></span>
+					<p class="text-muted">MSFT所占比例</p>
+				</span>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<span class="chart" data-percent="25">
+					<span class="percent"></span>
+					<p class="text-muted">GOOG所占比例</p>
+				</span>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<span class="chart" data-percent="25">
+					<span class="percent"></span>
+					<p class="text-muted">AAPL所占比例</p>
+				</span>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<span class="chart" data-percent="25">
+					<span class="percent"></span>
+					<p class="text-muted">TSLA所占比例</p>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+    <!-- Services Section -->
+<section id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">先进，简单，安全，省心</h2>
+				<h3 class="section-subheading text-muted">节省您在股票市场上所耗费的精力</h3>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="service-heading">先进的算法</h4>
+				<p class="text-muted">平衡宝基于先进的机器学习算法。通过对历史数据进行分析，对明日的涨跌进行预测，自动优化您当前持有的股票配额，从而最大化明天的收益！</p>
+			</div>
+			<div class="col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="service-heading">更多的回报</h4>
+				<p class="text-muted">实验表明，相较于投资指数基金和持有策略，平衡宝能够为您带来更丰厚的回报。您无需过分担心风险。平衡宝的算法可以有效地对冲掉因价格波动产生的风险。</p>
+			</div>
+			<div class="col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-money fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="service-heading">低廉的佣金</h4>
+				<p class="text-muted">每个月，平衡宝只从您的股票盈利中抽取少额作为佣金。当您没有盈利时，平衡宝<strong>不收取</strong>任何佣金。对于您每天的股票交易中，平衡宝不收取任何中介交易费。</p>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-4">
+					<span class="fa-stack fa-4x">
+						<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<i class="fa fa-users fa-stack-1x fa-inverse"></i>
+					</span>
+					<h4 class="service-heading">私人的定制</h4>
+					<p class="text-muted">您无需研究股票各种术语，也无需对平衡宝进行复杂的设置。您只需要告诉我们：您看好的哪只股票？您期望多少收益？您能承担的风险？我们来为您定制私人的平衡宝。</p>
+				</div>
+				<div class="col-md-4">
+					<span class="fa-stack fa-4x">
+						<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+					</span>
+					<h4 class="service-heading">安全的保障</h4>
+					<p class="text-muted">所有的交易完全在您的账户中进行，您的股票及现金完全掌握在您的手中。平衡宝无权转移您的股票和现金到其它账户。您可以随时暂停、终止平衡宝对您账户的操作，这不会影响您已经获得的收益。</p>
+				</div>
+
+			<div class="col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="service-heading">省心的服务</h4>
+				<p class="text-muted">从第一步开始，就有我们陪同帮助您一起开通股票账户。其余的就交给平衡宝吧！你可以随时登陆股票账户查看您的账户。我们也将每月向您汇报收益情况。</p>
+			</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+    <!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">实例</h2>
+				<h3 class="section-subheading text-muted">平衡宝在2014至2015年的市场表现</h3>
+			</div>
+		</div>
+		<div class="alert alert-warning alert-dismissible text-center" role="alert">
+			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<i class="fa fa-exclamation-triangle"></i> 历史数据上的表现仅作为算法性能的评测指标。平衡宝保证下图数据的真实性，但并不保证未来一年的收益率吻合下图。
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="col-lg-6 col-centered text-center">
+					<p class="text-muted">使用平衡宝对美股的9个板块的交易所基金(ETF)进行自动交易。账户初始金额为1万美元。在2014年1月1日至15年1月1日的回报率为18.1%。对比之下，直接购买标准普尔指数基金(SPY)的一年的回报率为13.3%。夏普指数为1.36。回报已经扣除交易费。</p>
+					<p><span class="label btn-phb">平衡宝回报率</span>  <span class="label btn-spy">标准普尔500基金回报率</span></p>
+				</div>
+			</div>
+		</div>
+		<div class ="row">
+			<div class="col-lg-8 col-xs-8 col-centered">
+				<canvas id="myChart1" height="130"></canvas>
+			</div>
+			<div class="col-lg-12 text-center">
+			<a href='demo1.pdf'><i class="fa fa-calendar"></i> <strong>按月查看详细历史指标</strong></a>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="col-lg-6 col-centered text-center">
+					<p class="text-muted">使用平衡宝对苹果(AAPL)和微软(MSFT)两只股票进行自动交易。账户初始金额为1万美元。在2014年1月1日至15年1月1日的回报率为51.6%。对比之下，持有策略（即2014在1月1日年按照AAPL和MSFT各买入价值5000美元的股票）随后持有的回报率为32.3%。而购买标准普尔指数基金(SPY)的一年的回报率为13.3%。夏普指数为2.98。回报已经扣除交易费。</p>
+					<p><span class="label btn-phb">平衡宝回报率</span>   <span class="label btn-hold">持有回报率</span>   <span class="label btn-spy">标准普尔500基金回报率</span></p>
+				</div>
+			</div>
+		</div>
+		<div class ="row">
+			<div class="col-lg-8 col-xs-8 col-centered">
+				<canvas id="myChart2" height="130"></canvas>
+			</div>
+			<div class="col-lg-12 text-center">
+			<a href='demo1.pdf'><i class="fa fa-calendar"></i> <strong>按月查看详细历史指标</strong></a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="col-lg-6 col-centered text-center">
+					<p class="text-muted">某客户从2015年2月20日投资10万美元到平衡宝，对其自选的12支股票进行自动交易。经其授权，我们在这里展示其平衡宝的状态并<strong>每日更新</strong>。回报已经扣除交易费。</p>
+					<p><span class="label btn-hold">上次更新：2015年06月19日00:23:32<p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row overview">
+			<div class="col-md-5 user-pad text-center">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-signal fa-stack-1x fa-inverse"></i>
+				</span>
+				<h3>预期年化收益率</h3>
+				<h4 v1>43.59%</h4>
+			</div>
+			<div class="col-md-2 user-pad text-center">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-tachometer fa-stack-1x fa-inverse"></i>
+				</span>
+				<h3>夏普指数</h3>
+				<h4 v2>2.83</h4>
+			</div>
+			<div class="col-md-5 user-pad text-center">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-level-down fa-stack-1x fa-inverse"></i>
+				</span>
+				<h3>最大回撤</h3>
+				<h4 v3>-3.42%</h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">如何开通？</h2>
+                    <h3 class="section-subheading text-muted">您只需做三步，余下的交给平衡宝</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>第一步</h4>
+                                    <h4 class="subheading">开通您的股票账户</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">首先您需要开通一个支持算法交易的股票账户。在这里我们像您推荐<a href="http://interactivebrokers.com" target="_blank">Interactive Brokers</a> （IB），它良好的信誉度和开放的数据接口为平衡宝提供了稳定的平台。开通IB账户时您需要填写一些表格文件，并注入您的启动资金。不懂如何填写表格？别担心，我们将为您提供帮助。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>第二步</h4>
+                                    <h4 class="subheading">配置您的平衡宝</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">如果您已经有了看好的股票，请告诉我们。如果您对股票并无了解，我们亦可为您推荐稳健的方案。如果您希望配置平衡宝的细节参数，也请告诉我们。在与您充分讨论之后，我们将为您定制私人化的平衡宝。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>第三步</h4>
+                                    <h4 class="subheading">连接平衡宝至股票账户</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">在您指定的开始日期，我们会将平衡宝连接到您的IB股票账户。接下来，您无需继续任何操作。平衡宝将根据股票价格波动每天优化您的股票配额。您可以随时登陆IB查看账户信息。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+							<a href ="#contact" class="page-scroll">
+                            <div class="timeline-image">
+                                <h4>现在
+									<br>就申请
+                                    <br>平衡宝</h4>
+                            </div>
+						</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Team Section -->
+<section id="team" class="bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">团队</h2>
+				<h3 class="section-subheading text-muted">小团队，大作为</h3>
+			</div>
+		</div>
+	</div>
+	<div class="[ container text-center ]">
+		<div class="[ row ]">
+			<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+	            <div class="[ col-xs-4 col-sm-12 ]">
+	                <!-- Nav tabs -->
+	                <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+	                    <li role="presentation" class="active">
+	                        <a href="#hxiao" aria-controls="hxiao" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/1.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="">
+	                        <a href="#tqiu" aria-controls="tqiu" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/2.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="">
+	                        <a href="#xcliu" aria-controls="xcliu" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/3.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                    <li role="presentation" class="">
+	                        <a href="#hcxiong" aria-controls="hcxiong" role="tab" data-toggle="tab">
+	                            <img class="img-circle" src="img/team/4.jpg" />
+	                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <div class="[ col-xs-8 col-sm-12 ]">
+	                <!-- Tab panes -->
+	                <div class="tab-content" id="tabs-collapse">            
+	                    <div role="tabpanel" class="tab-pane fade in active" id="hxiao">
+	                        <div class="tab-inner">
+								<p class="lead">
+								肖涵
+								</p>
+								创始人     
+								<hr>              
+	                            <p>德国慕尼黑工业大学计算机系博士，机器学习和数据挖掘爱好者。</p>
+								<a href="http://de.linkedin.com/in/hxiao87">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div>
+	                    </div>
+                    
+	                    <div role="tabpanel" class="tab-pane fade" id="tqiu">
+	                        <div class="tab-inner">
+								<p class="lead">邱腾</p>
+								<hr> 
+	                            <p >毕业于德国柏林工业大学，因CIH病毒“被逼”成为计算机Geeker近20年，因留学欧洲关注并从事外汇及证券交易10余年，现任职大数据架构师，精通金融及市场数据分析，在MOOC平台小像学院主讲《Hadoop/Spark企业应用实战》课程。</p>
+								<a href="http://de.linkedin.com/in/tengqiu">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div>
+	                    </div>
+                    	
+	                    <div role="tabpanel" class="tab-pane fade" id="xcliu">
+	                        <div class="tab-inner">
+								<p class="lead">刘昕畅</p>
+								<hr>
+	                            <p>瑞士洛桑联邦理工学院在读博士，爱数学，爱编程，爱新奇想法。</p>
+								<a href="http://ch.linkedin.com/pub/xinchang-liu/24/59/447">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div> 
+							
+	                    </div>
+	                    <div role="tabpanel" class="tab-pane fade" id="hcxiong">
+	                        <div class="tab-inner">
+								<p class="lead">熊汉琛</p>
+								<hr>
+	                            <p>奥地利因斯布鲁克大学计算机博士，专注机器学习，数学建模和最优化。</p>
+								<a href="https://de.linkedin.com/pub/hanchen-xiong/1b/ba/722">
+								<span class="fa-stack fa-1x">
+									<i class="fa fa-circle fa-stack-2x text-primary"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+	                        </div> 
+	                    </div>
+	                </div>
+	            </div>        
+	        </div>
+		</div>
+	</div>
+</section>
+	<section id="faq">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">常见问题</h2>
+				<h3 class="section-subheading text-muted">这里汇聚了一些关于平衡宝的常见问题</h3>
+			</div>
+		</div>
+
+		<div class="alert alert-warning alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			如果您在这里没有找到你所需要的信息，欢迎<a href="#contact" class="page-scroll">联系我们</a>。我们将为您提供解答。
+		</div>
+
+		<br/>
+
+		<div class="panel-group" id="accordion">
+			<div class="faqHeader">入门</div>
+			<div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq889">平衡宝是一个基金么？</a> </h4> </div> <div id="faq889" class="panel-collapse collapse"> <div class="panel-body">不是。它是一套软件（算法），帮助优化您的股票账户。您为此支付的佣金可以看做是购买了该软件一定时间内的使用权。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq954">平衡宝能否使我短期内暴富？</a> </h4> </div> <div id="faq954" class="panel-collapse collapse"> <div class="panel-body">不能。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq388">平衡宝能否保证每月产生固定的回报？</a> </h4> </div> <div id="faq388" class="panel-collapse collapse"> <div class="panel-body">不能。虽然平衡宝可以对冲掉一部分风险，但股票市场的风险仍然存在。当您选择的所有股票都下跌时，平衡宝无法产生任何回报。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq742">平衡宝是否收取交易费？</a> </h4> </div> <div id="faq742" class="panel-collapse collapse"> <div class="panel-body">平衡宝不收取任何交易费。所有交易费由Interactive Brokers产生。详情请参看Interactive Brokers网站。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq590">使用平衡宝是否存在风险？</a> </h4> </div> <div id="faq590" class="panel-collapse collapse"> <div class="panel-body">是的。平衡宝是基于股票市场的产品，因此存在一定的风险。我们建议您选择不同领域的股票，而不是将选择局限于某个领域（如科技板块）。这样，平衡宝的分配算法能在股市低迷市帮您有效的对冲风险。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq126">平衡宝如何收费？</a> </h4> </div> <div id="faq126" class="panel-collapse collapse"> <div class="panel-body">每个季度，我们将收取您的获利的10%左右做为佣金。如果您的股票账户在当月没有盈利，则平衡宝不收取任何费用。例如，您投入的1万美元股票账户在第三季度的回报率是3%，即300美元。按照10%的佣金来计算，平衡宝在这个季度结束时收取30您美元。如果您的1万美元在第三季度没有盈利，则余额宝不收取任何费用。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq101">平衡宝是否会转移或挪用我的账户中的钱和股票？</a> </h4> </div> <div id="faq101" class="panel-collapse collapse"> <div class="panel-body">不会。平衡宝只能够在您的账户中进行股票买卖。这就好比您是一家快餐店的店主，您请平衡宝作为前台收银员。随后您把平衡宝锁在前台并离开了快餐店。此后平衡宝进行的所有交易，都只局限在点餐台内。所有交易的获利都存放在点餐台的收银机。没有您的钥匙，平衡宝无权也无法将您的股票和现金带出点餐台。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq999">开通平衡宝需要多长时间？</a> </h4> </div> <div id="faq999" class="panel-collapse collapse"> <div class="panel-body">从我们的经验来看，开通Interactive Brokers股票账户需要2至3周。开通后资金到账需要1周的时间。当资金准备就绪，平衡宝可以立即绑定到您的股票账户，当日开始交易。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq126">使用平衡宝所需要的初始资金是多少？</a> </h4> </div> <div id="faq126" class="panel-collapse collapse"> <div class="panel-body">1万美元。这是开通Interactive Brokers所需要的最低额度。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq399">我能否只提供低于一万美元的初始资金？</a> </h4> </div> <div id="faq399" class="panel-collapse collapse"> <div class="panel-body">1万美元是开通Interactive Brokers所需要的最低额度。另外，当股票账户的初始金额较小时，您选择的股票范围会被限制。例如，GOOG当前为$502一股，NFLX为$409一股，如果您选择GOOG和NFLX做平衡宝并投入$1000的初始金额。平衡宝计算出当前的最优分配是GOOG 30%的配额，NFLX是70%的配额。然而由于资金限制，这种配额无法达到。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq768">平衡宝可以对那些股票进行交易？</a> </h4> </div> <div id="faq768" class="panel-collapse collapse"> <div class="panel-body">目前平衡宝支持对美国市场的股票和交易所交易基金(ETF)进行交易。在美国上市的中国公司股票也在交易范围内。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq645">平衡宝支持哪种交易货币？</a> </h4> </div> <div id="faq645" class="panel-collapse collapse"> <div class="panel-body">仅美元。在向Interactive Brokers中注入初始资金时，您可以选择从其他货币兑换成美元。但在此之后，所有的交易及结算都是美元。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq137">平衡宝是否支持在除美国以外的其他国家的交易所进行交易？</a> </h4> </div> <div id="faq137" class="panel-collapse collapse"> <div class="panel-body">不支持。暂时只支持在美国交易所进行交易。</div> </div> </div>
+
+			<div class="faqHeader">进阶</div>
+			<div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq588">平衡宝的每次交易间隔是多久？</a> </h4> </div> <div id="faq588" class="panel-collapse collapse"> <div class="panel-body">理论上平衡宝每天都会进行交易。如果今天持有的股票配额在明天的收益预期为正时（即盈利时），平衡宝不会进行交易。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq483">我可以选择多少只股票或交易所基金？</a> </h4> </div> <div id="faq483" class="panel-collapse collapse"> <div class="panel-body">理论上您可以选择所有在美国可以交易的股票。但是，选择所有的股票往往等同于选择了交易所基金。过多的股票，虽然对冲掉了波动的风险，但同时也降低了您的回报。另外，过多的股票会造成过多的交易费。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq286">平衡宝是不是高频交易？我能否定制平衡宝以进行高频交易？</a> </h4> </div> <div id="faq286" class="panel-collapse collapse"> <div class="panel-body">平衡宝不是高频交易算法。高频交易算法的交易间隔一般小于毫秒级。平衡宝的交易是以天为单位。您可以定制私人化的平衡宝从而达到最小间隔为分钟级的交易。需要注意的是，这种频率的交易往往属于当日冲销，根据美国Financial Industry Regulatory Authority 和 SEC的规定，当日冲销的股票账户需要更多的初始资金。请参阅Interactive Brokers上的详细信息。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq167">我能否得知平衡宝今日对股票进行了怎样的交易？</a> </h4> </div> <div id="faq167" class="panel-collapse collapse"> <div class="panel-body">可以。每天您会收到来自Interactive Brokers的一封电子邮件，总结了当日您账户中所产生的股票交易。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq774">平衡宝的算法原理是什么？</a> </h4> </div> <div id="faq774" class="panel-collapse collapse"> <div class="panel-body">从算法层面讲，平衡宝融合了Online Learning和Ensemble Learning，通过对价格波动的预测对股票配额进行优化。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq517">我观察到平衡宝今天没有对我的股票配额进行优化，这正常么？</a> </h4> </div> <div id="faq517" class="panel-collapse collapse"> <div class="panel-body">正常。如果今天持有的股票配额在明天的收益预期为正时（即已经是较优值），平衡宝不会进行交易。只有当今日持有的股票配额在明天的预期收益为负值时，平衡宝才会对其做出改变。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq650">我想暂停或终止平衡宝和我的股票账户的绑定，是否可以立即执行？</a> </h4> </div> <div id="faq650" class="panel-collapse collapse"> <div class="panel-body">是的。无论在交易时间，还是非交易时间，您都可以随时停止平衡宝对您股票账户的操作，也可以完全终止平衡宝与您股票账户的绑定。取决于您与我们事先签订的协议，在停止平衡宝时，我们可能会抽取您在当季度的部分盈利作为佣金。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq229">当平衡宝算法被多数人使用时，算法的盈利是否会减少？</a> </h4> </div> <div id="faq229" class="panel-collapse collapse"> <div class="panel-body">由于客户一般涉及金额较少，且不同客户选股相同。即便大量客户同时使用，对股票市场的价格影响可以忽略不计，因此平衡宝的获利并不会收到影响。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq846">当平衡宝启动后我能否追加投资？</a> </h4> </div> <div id="faq846" class="panel-collapse collapse"> <div class="panel-body">可以。这并不会影响您现在持有的股票和之前的收益。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq439">当平衡宝启动后我能否减少投资？</a> </h4> </div> <div id="faq439" class="panel-collapse collapse"> <div class="panel-body">可以。你可以限制平衡宝使用的账户最大比例(即：资金杠杆)。例如，如果您初始金额为1万美元，选择最大60%的股票账户总额，这意味着您将有至少4千美元不会被用于投资，也就是说您的账户中总会有至少4千美元的现金。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq808">经过一段时间的平衡宝使用，我的股票账户已经产生了可观的利润，我怎么才能取得这些利润？</a> </h4> </div> <div id="faq808" class="panel-collapse collapse"> <div class="panel-body">您需要手动操作卖出您的股票并转移走这部分现金。或者您可以在合适的时间将股票账户清仓，转移部分现金到您的银行账户，在股票账户中则重新定义您的初始投资金额。平衡宝无权将您的现金转移到其他账户。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq568">我可否定制平衡宝并设置大于1的资金杠杆？</a> </h4> </div> <div id="faq568" class="panel-collapse collapse"> <div class="panel-body">可以。默认情况下，平衡宝不适用任何杠杆。您可以定制高杠杆的平衡宝。但需要提醒您的是，高杠杆在为您带来更丰厚收益的同时，也增加了巨额损失的风险。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq991">平衡宝是否会产生高额的交易费？</a> </h4> </div> <div id="faq991" class="panel-collapse collapse"> <div class="panel-body">不会。平衡宝不是高频交易算法，它的最小交易间隔为一天。而且，只有当极端情况下，例如当股票按照严格周期波动时，算法才会每天交易。这种情况下，算法可以获取巨额利润，完全无需考虑交易费。当然，真实市场不存在这种严格周期波动的股票。一般情况下，算法会采取节约的策略，在多数时间持仓，帮助您较少交易费。</div> </div> </div>
+
+			<div class="faqHeader">股票账户</div>
+			<div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq217">我在哪里能开通股票账户？</a> </h4> </div> <div id="faq217" class="panel-collapse collapse"> <div class="panel-body">您可以前往Interactive Brokers了解详情。如果您决定使用平衡宝，请与我们联系，由我们帮助您一起开通股票账户。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq953">平衡宝和Interactive Brokers是什么关系？</a> </h4> </div> <div id="faq953" class="panel-collapse collapse"> <div class="panel-body">Interactive Brokers为平衡宝提供了开放的数据接口，使得平衡宝的算法可以直接在您的账户范围内交易股票。平衡宝和Interactive Brokers不存在商业上的合作关系。平衡宝并非Interactive Brokers的产品。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq58">我有其他的股票账户，是否可以使用平衡宝？</a> </h4> </div> <div id="faq58" class="panel-collapse collapse"> <div class="panel-body">平衡宝暂时只支持Interactive Brokers。我们会不断扩展所支持的股票账户种类。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq962">我在开通Interactive Brokers账户时遇到了问题，我应该找谁来解决？</a> </h4> </div> <div id="faq962" class="panel-collapse collapse"> <div class="panel-body">您可以联系我们，我们对您的开户流程进行全程服务和解答。我们也鼓励您联系Interactive Brokers了解详情。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq172">平衡宝需不需要知道我的股票账户密码？</a> </h4> </div> <div id="faq172" class="panel-collapse collapse"> <div class="panel-body">平衡宝只在最初绑定到您的股票账户时，需要知道您的两步验证码。两步验证码是指你在登录系统时，系统除了要求你输入登陆密码，还需要知道您的物理密码本（例如短信验证）上的安全验证码。除此之外，平衡宝不会向您索取密码和验证码。当您暂停平衡宝又重新绑定时，平衡宝需要重新进行两步验证。</div> </div> </div><div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq975">我能否和朋友一起共享一个IB账户使用平衡宝？</a> </h4> </div> <div id="faq975" class="panel-collapse collapse"> <div class="panel-body">可以。但需要注意的是，您和您的朋友需要在选择哪些股票上达成一致，并愿意承担对方股票所带来的风险。</div> </div> </div>
+		</div>
+	</div>
+</section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <a href="http://ojins.com" target="_blank">
+                        <img src="img/logos/ojins.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <a href="http://www.fxlive.eu/" target="_blank">
+                        <img src="img/logos/fxlive.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">联系我们</h2>
+                    <h3 class="section-subheading text-muted">了解更多详情，请致信phb@cneu.eu</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="您的姓名 *" id="name" required data-validation-required-message="请输入您的称呼" aria-invalid="true">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="您的电子邮件 *" id="email" required data-validation-required-message="请输入您的电子邮件" aria-invalid="true">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="您的电话 *" id="phone" required data-validation-required-message="请输入您的电话" aria-invalid="true">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="在此留下您的信息 *" id="message" required data-validation-required-message="请留下您的信息" aria-invalid="true"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">发送信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">版权所有 &copy; 平衡宝 2015</span>
+                </div>
+				<div class="col-md-4">
+				</div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">隐私条款</a>
+                        </li>
+                        <li><a href="#">使用条款</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Portfolio Modals -->
+ 
+
+    <!-- jQuery Version 1.11.0 -->
+<script src="/phb/js/jquery-2.0.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/phb/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/phb/js/jquery.easing.min.js"></script>
+<script src="/phb/js/classie.js"></script>
+<script src="/phb/js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="/phb/js/jqBootstrapValidation.js"></script>
+<script src="/phb/js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/phb/js/agency.js"></script>
+<script src="/phb/js/Chart.js"></script>
+<script src="/phb/js/jquery.easypiechart.min.js"></script>
+
+<script>
+// Get the context of the canvas element we want to select
+
+var options = {
+
+	///Boolean - Whether grid lines are shown across the chart
+	scaleShowGridLines : true,
+
+	//String - Colour of the grid lines
+	scaleGridLineColor : "rgba(0,0,0,.05)",
+
+	//Number - Width of the grid lines
+	scaleGridLineWidth : 1,
+
+	//Boolean - Whether to show horizontal lines (except X axis)
+	scaleShowHorizontalLines: true,
+
+	//Boolean - Whether to show vertical lines (except Y axis)
+	scaleShowVerticalLines: true,
+
+	//Boolean - Whether the line is curved between points
+	bezierCurve : true,
+
+	//Number - Tension of the bezier curve between points
+	bezierCurveTension : 0.4,
+
+	//Boolean - Whether to show a dot for each point
+	pointDot : true,
+
+	//Number - Radius of each point dot in pixels
+	pointDotRadius : 4,
+
+	//Number - Pixel width of point dot stroke
+	pointDotStrokeWidth : 1,
+
+	//Number - amount extra to add to the radius to cater for hit detection outside the drawn point
+	pointHitDetectionRadius : 20,
+
+	//Boolean - Whether to show a stroke for datasets
+	datasetStroke : true,
+
+	//Number - Pixel width of dataset stroke
+	datasetStrokeWidth : 2,
+
+	//Boolean - Whether to fill the dataset with a colour
+	datasetFill : true,
+	
+	responsive: true,
+	
+	maintainAspectRatio: true
+	
+
+};
+var data1 = {
+	labels: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+	datasets: [
+		{
+			label: "平衡宝",
+			fillColor: "rgba(248,197,44,0.2)",
+			strokeColor: "rgba(248,197,44,1)",
+			pointColor: "rgba(248,197,44,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(248,197,44,1)",
+			data: [0, -4.8, 0.5, 4.8, 6.1, 8.4, 12.5, 8.8, 13.8, 7.8, 11.1, 16.1, 18.1]
+		},
+		{
+			label: "标准普尔500指数",
+			fillColor: "rgba(0,0,0,0.2)",
+			strokeColor: "rgba(0,0,0,1)",
+			pointColor: "rgba(0,0,0,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(0,0,0,1)",
+			data: [0, -5.3, 0.5, 2.3, 2.8, 5.3, 7.6, 5.6, 10.1, 6.6, 11.1, 13.4, 13.3]
+		}
+	]
+};
+var data2 = {
+	labels: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+	datasets: [
+		{
+			label: "平衡宝",
+			fillColor: "rgba(248,197,44,0.2)",
+			strokeColor: "rgba(248,197,44,1)",
+			pointColor: "rgba(248,197,44,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(248,197,44,1)",
+			data: [0, 1.7, 5.09, 15.3, 13.1, 17.3, 21.6, 25.5, 32.5, 42.9, 52.8, 56.9, 51.6]
+		},
+		{
+			label: "买入后持有",
+			fillColor: "rgba(245,135,35,0.2)",
+			strokeColor: "rgba(245,135,35,1)",
+			pointColor: "rgba(245,135,35,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(245,135,35,1)",
+			data: [0, -3.9, -1.2, 4.4, 7.0, 11.6, 14.9, 18.5, 25.8, 24.6, 31.1, 37.9, 32.4]
+		},
+		{
+			label: "标准普尔500指数",
+			fillColor: "rgba(0,0,0,0.2)",
+			strokeColor: "rgba(0,0,0,1)",
+			pointColor: "rgba(0,0,0,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(0,0,0,1)",
+			data: [0, -5.3, 0.5, 2.3, 2.8, 5.3, 7.6, 5.6, 10.1, 6.6, 11.1, 13.4, 13.3]
+		}
+	]
+};
+var ctx = document.getElementById("myChart1").getContext("2d");
+var myLineChart = new Chart(ctx).Line(data1, options);
+var ctx = document.getElementById("myChart2").getContext("2d");
+var myLineChart = new Chart(ctx).Line(data2, options);	
+$(function() {
+	$('.chart').easyPieChart({
+		easing: 'easeOutBounce',
+		lineWidth: 10,
+		barColor: '#ebba17',
+		scaleColor: '#b8baba',
+		onStep: function(from, to, percent) {
+			$(this.el).find('.percent').text(Math.round(percent));
+		}
+	});
+	var chart = window.chart = $('.chart');
+		
+	window.setInterval(function() {
+		var myArray = [];
+		var arrayMax = 4;
+		var sumArray = 0;
+		for (var i = 0; i < arrayMax; i++) {
+			myArray.push(Math.random());
+			sumArray += myArray[i];
+		}
+		for (var i = 0; i < arrayMax; i++) {
+			myArray[i] /= sumArray;
+			myArray[i] *= 100;
+		}
+			
+		chart.each(function(idx) {
+			$( this ).data('easyPieChart').update(myArray[idx]);	
+		});
+	}, 5000);
+});
+</script>
+
+    </body>
+</html>
